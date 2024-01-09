@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+
+}
+
+body{
+    background-color:antiquewhite;
+}
+
+nav{
+    font-family: 'Ubuntu',sans-serif;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    font-weight: bolder;
+}
+
+.brand img{
+    width: 48px;
+    padding: 0px 8px;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    height: 60px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0px 10px;
+}
+
+.container{
+    height: 70vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    width: 60vw;
+    margin: 20px auto;
+    border-radius:12px;
+    padding: 24px;
+    background-image: url('./asset/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+
+    
+}
+.songItemContainer{
+    margin-top: 2vh;
+    overflow: scroll;
+    height:60vh;
+    overflow-x: hidden;
+}
+.songItem{
+    display: flex;
+    margin: 10px;
+    background-color:white;
+    height: fit-content;
+    align-items: center;
+    max-width: 40%;
+    border-radius: 34px;
+    color: black;
+    justify-content: space-between;
+}
+.songItem img{
+    margin: 5px 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 34px;
+}
+
+.songDurationContainer{
+    display: flex;
+    align-items: center;
+}
+.songDurationContainer i{
+    margin: 0 10px;
+    cursor: pointer;
+}
+.bottom{
+    display: flex;
+    position: sticky;
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 90px;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom #songInfo{
+    font-family: 'Varela Round', sans-serif;
+    position: absolute;
+    left: 10vw;
+}
+
+#songInfo img{
+    height: 30px;
+    width: 100px;
+    opacity: 0;
+}
+
+#songInfo{
+    transition: all 0.4s;
+
+}
+.icons i{
+    margin: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+
+#myProgressBar{
+    cursor: pointer;
+    width: 80vw;
+}
