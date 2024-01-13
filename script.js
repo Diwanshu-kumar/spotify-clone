@@ -103,6 +103,9 @@ myProgressBar.addEventListener('change',()=>{
 const updateSeekBar = ()=>{
     let progressPercent = parseInt(audioElement.currentTime/audioElement.duration*100);
     myProgressBar.value = progressPercent;
+    if(audioElement.currentTime===audioElement.duration){
+        playNextSong();
+    }
 }
 function playPreviousSong(){
     pauseSong(previousPlayingSong);
